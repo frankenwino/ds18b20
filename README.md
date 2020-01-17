@@ -27,4 +27,4 @@ Verify that the 1-Wire kernel modules have loaded on the next boot. You should s
 
 `lsmod | grep -i w1_`
 
-![alt text]()
+<img src="https://github.com/frankenwino/db18b20/blob/master/lsmod%20Screenshot%20.png">
