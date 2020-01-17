@@ -27,3 +27,4 @@ Verify that the 1-Wire kernel modules have loaded on the next boot. You should s
 
 `lsmod | grep -i w1_`
 
+![alt text]()
