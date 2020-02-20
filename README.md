@@ -4,7 +4,7 @@
 Credit: https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/software
 
 ## Wiring
-- DAT to a GPIO pin
+- DAT to GPIO pin GPIO4 / physical pin 7 (GPIO4 is the default pin for 1-Wire)
 - VCC to a 5v pin
 - GND to a ground pin
 
