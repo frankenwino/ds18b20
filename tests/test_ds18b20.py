@@ -1,21 +1,25 @@
-#!/usr/bin/env python
+from ds18b20.ds18b20 import DS18B20
 
-"""Tests for `ds18b20` package."""
+def test_celsius():
+    # Arrange
+    t = DS18B20()
+    # Act
+    celsius = t.celsius()
+    # Assert
+    assert isinstance(celsius, float)
 
-
-import unittest
-
-from ds18b20 import ds18b20
-
-
-class TestDs18b20(unittest.TestCase):
-    """Tests for `ds18b20` package."""
-
-    def setUp(self):
-        """Set up test fixtures, if any."""
-
-    def tearDown(self):
-        """Tear down test fixtures, if any."""
-
-    def test_000_something(self):
-        """Test something."""
+def test_farenheit():
+    # Arrange
+    t = DS18B20()
+    # Act
+    farenheit = t.farenheit()
+    # Assert
+    assert isinstance(farenheit, float)
+    
+def test_now():
+    # Arrange
+    n = DS18B20()
+    # Act
+    current_time = n.now()
+    # Assert
+    assert isinstance(current_time, str)
