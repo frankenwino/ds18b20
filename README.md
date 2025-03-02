@@ -28,3 +28,10 @@ Verify that the 1-Wire kernel modules have loaded on the next boot. You should s
 `lsmod | grep -i w1_`
 
 <img src="https://github.com/frankenwino/db18b20/blob/master/lsmod%20Screenshot.png">
+
+You can also verify with the following command:
+
+`ls /sys/bus/w1/devices/`
+
+You should see a folder named something like 28-XXXXXXXXXXXX, which is your DS18B20 sensor.
+
